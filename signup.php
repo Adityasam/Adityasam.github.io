@@ -38,5 +38,5 @@ $query="INSERT INTO login (username,email,dob,password)
 	$result=mysql_query($query);
 echo"<font size='18'>";
 echo "Registration successful";
-header("location:login new.html");}}
+}}
 ?>
