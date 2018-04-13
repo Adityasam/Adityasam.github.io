@@ -3,15 +3,15 @@ $username = filter_input(INPUT_POST, 'username');
 $email = filter_input(INPUT_POST, 'email');
 $dob = filter_input(INPUT_POST, 'dob');
 $password = filter_input(INPUT_POST, 'password');
-$host = "localhost";
-$user = "root";
-$pass = "";
-$dbname="feedback";
+$host = "sql12.freemysqlhosting.net";
+$user = "sql12232414";
+$pass = "ZBwyWjfG7Q";
+$dbname="sql12232414";
 if($username=='' or $email=='' or $dob== '' or $password==''){
 	echo "All fields are needed to be filled";
 }
 else{
-$link = mysql_connect("localhost", "root", "");
+$link = mysql_connect("sql12.freemysqlhosting.net", "sql12232414", "ZBwyWjfG7Q");
 //echo "connected";
 
 $db = mysql_select_db($dbname, $link);
