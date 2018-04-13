@@ -11,7 +11,7 @@ if($username=='' or $email=='' or $dob== '' or $password==''){
 	echo "All fields are needed to be filled";
 }
 else{
-$link = mysql_connect("sql12.freemysqlhosting.net", "sql12232414", "ZBwyWjfG7Q");
+$link = mysql_connect("sql12.freemysqlhosting.net", "sql12232414", "ZBwyWjfG7Q","sql12232414");
 //echo "connected";
 
 $db = mysql_select_db($dbname, $link);
